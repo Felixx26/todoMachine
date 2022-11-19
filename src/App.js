@@ -1,25 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.css'
+import { UseState } from './UseState'
+import { UseReducer } from './UseReducer'
 
-function App() {
+function App () {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='App'>
+      <UseState name='Use State' />
+      <UseReducer name='Use Reducer' />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
